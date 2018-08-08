@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Index Page</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<style type="text/css">
+		#submit{
+			margin-left: 243px;
+		}
+	</style>
+</head>
+<body>
+<!-- input / form section -->
+<div id="container">
+	<form action="/result" method="post">
+		<!-- name -->
+		<label>Your Name: </label>
+		<input type="text" name="name" id="name">
+		
+		<br><label>Dojo Location: </label>
+		<select id="dojoSelect" name="location">
+			<option value="seattle" name="location">Seattle</option>
+			<option value="chicago" name="location">Chicago</option>
+			<option value="san-fransisco" name="location">San-Fransisco</option>
+		</select>
+	
+
+		<br><label>Favorite language: </label>
+		<select name="language">
+			<option value="python" name="language">Python</option>
+			<option value="html" name="language">HTML & CSS</option>
+			<option value="javascript" name="language">JavaScript</option>
+		</select><br>
+	
+		
+		<br><label>Comment (optional): </label>
+		<br><textarea rows="5" cols="38" name="comment"></textarea>
+
+		<input type="submit" name="submit" id="submit">
+	</form>
+</div>
+
+
+
+</body>
+</html>

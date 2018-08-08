@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Show Page</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='showCSS.css') }}">
+</head>
+<body>
+
+<div class="container">
+	<h1>Submitted Info:</h1>
+
+	<table>
+		<tr>
+			<td>Name: </td>
+			<td>{{ name }}</td>
+		</tr>
+		<br>
+		<tr>
+			<td>Dojo Location:</td>
+			<td>{{ location }}</td>
+		</tr>
+		<br>
+		<tr>
+			<td>Favorite Language: </td>
+			<td>{{ language }}</td>
+		</tr>
+		<br>
+		<tr>Comment: </tr>
+		<tr>{{ comment }}</tr>
+	</table>
+
+
+
+</div>
+
+
+
+</body>
+</html>
